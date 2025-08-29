@@ -13,9 +13,9 @@
 130 poke a,09 : rem adsr release 
 200 rem playing sound fx
 210 for x=1 to 20: poke h,120: next
-130 poke a,08 : rem adsr release 
-210 for x=1 to 80: poke h,160: next
+215 for x=1 to 80: poke h,160: next
 220 poke w,0  : swicth sid off
 999 end
+
 
  
