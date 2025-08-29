@@ -62,9 +62,10 @@
 1115 poke v,0     : rem volume off                       
 1116 for x=1 to 10: next
 1117 poke v,15    : rem volume on
-2800 Rem
+2800 rem
 2850 go to 200
 2900 poke w,0    : rem swicth sid off
 2999 end
+
 
  
