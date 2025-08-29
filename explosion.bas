@@ -9,7 +9,7 @@
 50 l=54272     : rem sid base register 
 100 rem setting the sid
 110 poke v,15  : rem maximum volume
-120 poke w,129 : rem triangle waveform
+120 poke w,129 : rem noise waveform
 130 poke a,11  : rem adsr release 
 200 rem playing sound fx
 201 rem
