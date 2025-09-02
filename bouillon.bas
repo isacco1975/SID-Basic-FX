@@ -8,8 +8,10 @@
 40  w3=54290    :rem waveform vox 3
 50  a1=54277    :rem adsr     vox 1
 60  a2=54284    :rem adsr     vox 2
+70  a3=54291    :rem adsr     vox 3
 80  f1=54273    :rem vox 1 freq 
 90  f2=54280    :rem vox 2 freq 
+100 f3=54287    :rem vox 3 freq
 110 si=54272    :rem sid base reg
 120 rem setting the sid
 130 poke v0,15  : rem maximum volume
