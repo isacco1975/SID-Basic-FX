@@ -23,19 +23,19 @@
 180 poke a2,01  : rem release vox 2
 190 poke a3,01  : rem release vox 3
 200 rem thunder beginning fx
+204 k=0
 205 k=k+1
 215 pokew1,129:pokea1,01
 220 ix=int(100*rnd(1))+1
 230 pokew1,0:forx=1toix:next
-240 if k=30 then 500
-250 goto 205
+240 if k<30 then 205
 500 pokew3,0:pokew3,129:pokea3,15
 510 forx=1to050:pokef3,050:next
 530 forx=1to020:pokef3,025:next
 550 poke f2,100
 560 forx=1to300:pokef3,011:next
 570 poke f3,030
-610 forx=1to3500:pokef2,030:next
+610 forx=1to2500:pokef1,001:next
 630 pokew1,0:pokew2,0:pokew3,0: rem sid off     
 999 end
 
