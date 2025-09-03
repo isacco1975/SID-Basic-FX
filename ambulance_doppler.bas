@@ -43,8 +43,7 @@
 587 goto 504
 700 rem going away from observer
 702 k=0:p=15
-704 pokew,33:k=k+1:p=p-1:pokev,p:printp,
-705 if p<0 then 900
+704 pokew,33:ifp<0then900:k=k+1:p=p-1:pokev,p:printp,
 710 for x=1 to 100: poke h,50/2: next
 720 pokew,0:pokew,33
 730 for x=1 to 10: poke h,83/2: next
