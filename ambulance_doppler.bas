@@ -43,7 +43,8 @@
 587 goto 504
 700 rem going away from observer
 702 k=0:p=15
-704 pokew,33:ifp<0then900:k=k+1:p=p-1:pokev,p:printp,
+703 p=p-1:ifp<=0then900
+704 pokew,33:k=k+1:pokev,p:printp,
 710 for x=1 to 100: poke h,50/2: next
 720 pokew,0:pokew,33
 730 for x=1 to 10: poke h,83/2: next
@@ -54,9 +55,9 @@
 780 for x=1 to 110: next
 785 pokew,0:pokew,33
 800 if k = 2 then 820
-810 goto 704
+810 goto 703
 820 for x=1 to 30:pokew,0:k=0:next
-830 goto 704
+830 goto 703
 900 poke w,0  : rem swicth sid off
 999 end
 
