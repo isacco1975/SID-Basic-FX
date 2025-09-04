@@ -35,7 +35,7 @@
 530 forx=1to020:pokef3,015:next
 550 poke f2,100
 570 pokew3,0:pokew3,129:poke f3,008
-610 forx=1to2500:pokef1,001:next
+610 forx=1to3000:pokef1,001:next
 630 pokew1,0:pokew2,0:pokew3,0: rem sid off     
 999 end
 
