@@ -18,23 +18,23 @@
 130 poke v0,15  : rem maximum volume
 140 poke w1,129 : rem noise   vox 1
 150 poke w2,129 : rem noise   vox 2
-160 poke w3,129 : rem noise   vox 3
+160 poke w3,129  : rem noise   vox 3
 170 poke a1,01  : rem release vox 1
 180 poke a2,01  : rem release vox 2
-190 poke a3,01  : rem release vox 3
+190 poke a3,15  : rem release vox 3
 200 rem thunder beginning fx
-204 k=0
+204 k=0:pokev0,03
 205 k=k+1
-215 pokew1,129:pokea1,01
+206 pokef3,002
+215 pokew1,129:pokew2,129:pokew3,129:pokea1,01
 220 ix=int(100*rnd(1))+1
 230 pokew1,0:forx=1toix:next
 240 if k<30 then 205
-500 pokew3,0:pokew3,129:pokea3,15
-510 forx=1to050:pokef3,050:next
-530 forx=1to020:pokef3,025:next
+500 pokev0,15:pokea3,15
+510 forx=1to050:pokef3,030:next
+530 forx=1to020:pokef3,015:next
 550 poke f2,100
-560 forx=1to300:pokef3,011:next
-570 poke f3,030
+570 pokew3,0:pokew3,129:poke f3,008
 610 forx=1to2500:pokef1,001:next
 630 pokew1,0:pokew2,0:pokew3,0: rem sid off     
 999 end
