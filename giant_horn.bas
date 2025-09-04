@@ -28,7 +28,7 @@
 280 poke a3,150 : rem release vox 3
 290 poke d1,41:poked2,14
 300 poke d3,67:poked4,98
-400 rem thunder beginning fx
+400 rem horn fx
 410 k=0:z=0
 420 k=k+1:z=z+1
 430 poke f1,k
