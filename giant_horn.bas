@@ -32,11 +32,11 @@
 410 k=0:z=0
 420 k=k+1:z=z+1
 430 poke f1,k
-445 k=k+5
+445 k=k+2
 450 poke f2,k
 455 forx=1to10:next
 460 rem print z 
-470 if k>30 then k=30
+470 if k>60 then k=60
 480 if z>50 then 600
 490 pokef1,k+2:pokef2,k+6
 500 goto 420
